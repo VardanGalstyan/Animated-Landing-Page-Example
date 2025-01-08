@@ -6,9 +6,11 @@ import tubeImage from "@/assets/tube.png";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import SectionHeader from "@/components/section-header";
 
 export const ProductShowcase = () => {
   const sectionRef = useRef(null);
+
   const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ["start end", "end start"],
@@ -22,18 +24,14 @@ export const ProductShowcase = () => {
       className="bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF] py-24 overflow-x-clip"
     >
       <div className="container">
-        <div className="section-heading">
-          <div className="flex justify-center">
-            <div className="tag">Boost your productivity</div>
-          </div>
-          <h2 className="section-title text-gradient mt-5">
-            A more effective way to track progress
-          </h2>
-          <p className="section-description mt-5">
-            Celebrate the joy of accomplishment with an app designed to track
-            your progress and motivate your efforts.
-          </p>
+        <div className="flex justify-center">
+          <div className="tag">Boost your productivity</div>
         </div>
+        <SectionHeader
+          title="A more effective way to track progress"
+          description="Celebrate the joy of accomplishment with an app designed to track
+            your progress and motivate your efforts."
+        />
         <div className="relative">
           <Image src={productImage} alt="product Image" className="mt-10" />
           <motion.img

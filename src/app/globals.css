@@ -31,14 +31,6 @@
     @apply text-center text-3xl font-bold tracking-tighter md:text-[54px] md:leading-[60px];
   }
 
-  .section-description {
-    @apply text-[22px] text-center leading-[30px] tracking-tight text-[#010D3E];
-  }
-
-  .section-heading {
-    @apply max-w-[560px] mx-auto;
-  }
-
   .card {
     @apply p-10 rounded-3xl shadow-[0_7px_14px_#EAEAEA] border border-[#F1F1F1] max-w-xs w-full;
   }

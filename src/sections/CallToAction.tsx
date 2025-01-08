@@ -3,6 +3,7 @@
 import ArrowIcon from "@/assets/arrow-right.svg";
 import springImage from "@/assets/spring.png";
 import starImage from "@/assets/star.png";
+import SectionHeader from "@/components/section-header";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
@@ -21,14 +22,11 @@ export const CallToAction = () => {
       className="bg-gradient-to-b from-white to-[#D2DCFF] py-24 overflow-x-clip"
     >
       <div className="container">
-        <div className="section-heading relative">
-          <h2 className="section-title text-gradient mt-5">
-            Sign up for free today
-          </h2>
-          <p className="section-description mt-5">
-            Celebrate the joy of accomplishment with an app designed to track
-            your progress and motivate your efforts.
-          </p>
+        <SectionHeader
+          title="Sign up for free today"
+          description="Celebrate the joy of accomplishment with an app designed to track
+            your progress and motivate your efforts."
+        >
           <motion.img
             style={{ translateY: translateY }}
             src={starImage.src}
@@ -45,7 +43,7 @@ export const CallToAction = () => {
             height={360}
             className="absolute -right-[331px] -top-[19px]"
           />
-        </div>
+        </SectionHeader>
         <div className="flex gap-2 justify-center item-center mt-10">
           <button className="btn btn-primary">Get for free</button>
           <button className="btn btn-text gap-1">
