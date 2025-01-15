@@ -19,7 +19,7 @@ The **Light SaaS Landing Page** project is designed to showcase how to build a r
 ## Live Demo
 
 You can view the live version of this project here:  
-[**Live Demo**](animated-landing-page-example.vercel.app)
+[**Live Demo**](https://animated-landing-page-example.vercel.app/)
 
 ---
 
